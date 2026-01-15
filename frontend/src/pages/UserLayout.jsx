@@ -1,9 +1,8 @@
 import React from "react";
-import Header from './../components/Common/Header';
+import Header from "./../components/Common/Header";
 import Footer from "../components/Common/Footer";
 import Home from "../components/Layout/Home";
 import { Outlet } from "react-router-dom";
-
 
 const UserLayout = () => {
   return (
@@ -23,5 +22,8 @@ const UserLayout = () => {
 
 export default UserLayout;
 
-
 /*displayed from the route from App.jsx */
+
+{
+  /*Home page */
+}

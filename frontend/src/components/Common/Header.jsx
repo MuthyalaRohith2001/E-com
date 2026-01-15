@@ -17,6 +17,14 @@ const Header = () => {
 
 export default Header;
 
-{/*Header is (1) */}
+{
+  /*Header is (1) */
+}
 
-{/*Next go the Home.jsx (2) */}
+{
+  /*Inserted in UserLayout.jsx */
+}
+
+{
+  /*Next go the Home.jsx (2) */
+}

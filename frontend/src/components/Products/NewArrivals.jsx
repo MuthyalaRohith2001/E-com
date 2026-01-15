@@ -160,12 +160,12 @@ const NewArrivals = () => {
     }
     /*We use setCanScrollLeft and setCanScrollRight to track whether scrolling is POSSIBLE on the left or right, 
     so we can enable/disable the arrow buttons correctly. */
-    console.log({
+    /** console.log({
       scrollLeft: container.scrollLeft,
       clientWidth: container.clientWidth,
       containerScrollWidth: container.scrollWidth,
       offsetLeft: scrollRef.current.offsetLeft,
-    });
+    }); */
   };
 
   /*(1) */
@@ -215,7 +215,7 @@ const NewArrivals = () => {
       {/*Scrollable Content */}
       <div
         ref={scrollRef}
-        className={`container mx-auto overflow-x-scroll flex space-x-6 relative ${
+        className={`container mx-auto overflow-x-scroll flex space-x-6 relative custom-scroll ${
           isDragging ? "cursor-grabbing" : "cursor-grab"
         }`}
         onMouseDown={handleMouseDown}

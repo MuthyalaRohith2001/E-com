@@ -21,10 +21,10 @@ const CartDrawer = ({ drawerOpen, toogleCartDrawer }) => {
         </button>
       </div>
       {/*Cart contents with scrollable area */}
-      <div className="grow p-4  overflow-y-auto bg-pink-100">
+      <div className="grow p-4  overflow-y-auto">
         <h2 className="text-xl font-semibold mb-4 ">Your Cart</h2>
         {/*Component for Cart Contents */}
-        <CartContents />
+        {/*===============> */} <CartContents />
       </div>
       {/*Checkout */}
       <div className="p-4 bg-white sticky border-0">

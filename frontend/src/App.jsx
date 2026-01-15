@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UserLayout from "./pages/UserLayout";
 import Home from "./components/Layout/Home";
+import { Toaster } from "sonner";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -21,7 +22,12 @@ const App = () => {
       element: "",
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Toaster position="top-right" richColors closeButton />
+      <RouterProvider router={router} />
+    </>
+  );
 };
 
 export default App;
